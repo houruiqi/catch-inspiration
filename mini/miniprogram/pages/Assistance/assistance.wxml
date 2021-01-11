@@ -1,0 +1,4 @@
+<!--pages/Assistance/assistance.wxml-->
+<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389">
+  <view style="font-weight:bold" slot="content">涂鸦像素</view>
+</cu-custom>

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/Assistance/assistance",
+    "pages/Notes/notes",
+    "pages/Setting/setting",
+    "pages/My/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "写作辅助",
+        "pagePath": "pages/Assistance/assistance",
+        "selectedIconPath": "images/tabbar/q.png",
+        "iconPath": "images/hq.png"
+      },
+      {
+        "text": "灵感手札",
+        "pagePath": "pages/Notes/notes",
+        "selectedIconPath": "images/tabbar/x.png",
+        "iconPath": "images/hx.png"
+      },
+      {
+        "text": "常用设定",
+        "pagePath": "pages/Setting/setting",
+        "selectedIconPath": "images/tabbar/t.png",
+        "iconPath": "images/ht.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/My/my",
+        "selectedIconPath": "images/tabbar/t.png",
+        "iconPath": "images/ht.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
