@@ -1,0 +1,71 @@
+<!--pages/Assistance/Name/name.wxml-->
+<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view style="font-weight:bold" class="text-black" slot="content">人名生成器</view>
+</cu-custom>
+<view class="nameboxtop">选择生成的姓氏长度、名称长度、性别、生成数量，即可获得相应的随机生成的人名</view>
+<view class="namebox">
+  <view class="nameboxleft">
+    <view class="nameboxleft1">
+      <view class="namenumber">姓氏长度</view>
+      <view class="number">
+        <picker value="{{number[index]}}" range="{{number}}" bindchange="bindPickerChangeName" >
+          <view>
+          {{number[index]}}
+          <text class="cuIcon-right"></text>
+          </view>
+        </picker>
+      </view> 
+    </view>
+    <view class="nameboxleft1">
+      <view class="namenumber">名称长度</view>
+      <view class="number">
+        <picker value="{{number[index1]}}" range="{{number}}" bindchange="bindPickerChangeName1" >
+          <view>
+          {{number[index1]}}
+          <text class="cuIcon-right"></text>
+          </view>
+        </picker>
+      </view> 
+    </view>
+  </view>
+</view>
+<view class="namebox">
+  <view class="nameboxleft">
+    <view class="nameboxleft1">
+      <view class="namenumber">性别</view>
+      <view class="number">
+        <picker value="{{number[index2]}}" range="{{gender}}" bindchange="bindPickerChangeGender" >
+          <view>
+          {{gender[index2]}}
+          <text class="cuIcon-right"></text>
+          </view>
+        </picker>
+      </view> 
+    </view>
+    <view class="nameboxleft1">
+      <view class="namenumber">生成数量</view>
+      <view class="number">
+        <picker value="{{sum[index3]}}" range="{{sum}}" bindchange="bindPickerChangeSum" >
+          <view>
+          {{sum[index3]}}
+          <text class="cuIcon-right"></text>
+          </view>
+        </picker>
+      </view> 
+    </view>
+  </view>
+</view>
+<view class="namebox">
+  <view class="nameboxleft">
+    <view class="nameboxleft1">
+      <view class="namenumber">指定姓氏（选填）</view>
+      <input class="number1" placeholder="张" type="text"/>  
+    </view>
+  </view>
+</view>
+<view class="generate">生成</view>
+<view>
+  <view class="nameGenerate"></view>
+</view>
+

@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    bullet:0,
+  },
+  bookbullet:function(e){
+    this.setData({
+      bullet: 1
+    });
+  },
+  determine:function(){
+    this.setData({
+      bullet: 0
+    });
+  },
+  bookdetails:function(){
+    wx.navigateTo({
+      url: '/pages/Notes/Bookdetails/bookdetails',
+      success: function () {}
+    })
   },
 
   /**

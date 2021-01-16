@@ -1,11 +1,18 @@
-// pages/Assistance/assistance.js
+// pages/Assistance/Persona/persona.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    data:["现代","古代","奇幻","科幻"],
+    index:0
+  },
+  bindPickerChangeData: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value);
+    this.setData({   //给变量赋值
+    index: e.detail.value,  //每次选择了下拉列表的内容同时修改下标然后修改显示的内容，显示的内容和选择的内容一致
+   })
   },
 
   /**
@@ -62,29 +69,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  name:function(e){
-      wx.navigateTo({
-        url: '/pages/Assistance/Name/name',
-        success: function () {}
-      })
-  },
-  place:function(e){
-    wx.navigateTo({
-      url: '/pages/Assistance/Place/place',
-      success: function () {}
-    })
-  },
-  appearance:function(e){
-    wx.navigateTo({
-      url: '/pages/Assistance/Appearance/appearance',
-      success: function () {}
-    })
-  },
-  persona:function(e){
-    wx.navigateTo({
-      url: '/pages/Assistance/Persona/persona',
-      success: function () {}
-    })
-  },
+  }
 })

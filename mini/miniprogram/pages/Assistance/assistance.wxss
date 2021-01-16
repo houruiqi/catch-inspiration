@@ -1,1 +1,21 @@
 /* pages/Assistance/assistance.wxss */
+.box{
+  width:80%;
+  margin-left:10%;
+  height:200rpx;
+  margin-top:10%;
+  border-radius: 20rpx;
+  border:1rpx solid #7a7474;
+}
+.text{
+  font-size:50rpx;
+  margin-top:50rpx;
+  margin-left:20rpx;
+  float:left;
+}
+.icon{
+  font-size:60rpx;
+  margin-top:50rpx;
+  margin-left:120rpx;
+  float:left;
+}

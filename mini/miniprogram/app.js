@@ -2,7 +2,9 @@
 App({
   onLaunch: function() {
      
-    this.globalData = {} // 务必确保这一行在前面
+    this.globalData = {
+      booktop:0
+    } // 务必确保这一行在前面
      
     wx.getSystemInfo({
       success: e => {

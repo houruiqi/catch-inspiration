@@ -1,4 +1,20 @@
 <!--pages/Assistance/assistance.wxml-->
 <cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389">
-  <view style="font-weight:bold" slot="content">涂鸦像素</view>
+  <view style="font-weight:bold" class="text-black" slot="content">写作辅助</view>
 </cu-custom>
+<view class="bg-white box" bindtap="name">
+  <view class="text">人名生成器</view> 
+  <text class="cuIcon-friend icon"></text>
+</view>
+<view class="bg-white box" bindtap="place">
+  <view class="text">地名生成器</view> 
+  <text class="cuIcon-home icon"></text>
+</view>
+<view class="bg-white box" bindtap="appearance">
+  <view class="text">外貌生成器</view> 
+  <text class="cuIcon-people icon"></text>
+</view>
+<view class="bg-white box" bindtap="persona">
+  <view class="text">人设生成器</view> 
+  <text class="cuIcon-news icon"></text>
+</view>

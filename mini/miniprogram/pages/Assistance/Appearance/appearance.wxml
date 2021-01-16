@@ -1,0 +1,59 @@
+<!--pages/Assistance/Appearance/appearance.wxml-->
+<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view style="font-weight:bold" class="text-black" slot="content">外貌生成器</view>
+</cu-custom>
+<view class="nameboxtop">选择生成的任务时代、人物性别、人物年龄段，即可获得相应的随机生成的人名</view>
+<view class="namebox">
+  <view class="nameboxleft">
+    <view class="nameboxleft1">
+      <view class="namenumber">人物时代</view>
+      <view class="data">
+        <picker value="{{data[index]}}" range="{{data}}" bindchange="bindPickerChangeData" >
+          <view>
+          {{data[index]}}
+          <text class="cuIcon-right"></text>
+          </view>
+        </picker>
+      </view> 
+    </view>
+    <view class="nameboxleft1">
+      <view class="namenumber">性别</view>
+      <view class="number">
+        <picker value="{{gender[index1]}}" range="{{gender}}" bindchange="bindPickerChangeGender" >
+          <view>
+          {{gender[index1]}}
+          <text class="cuIcon-right"></text>
+          </view>
+        </picker>
+      </view> 
+    </view>
+  </view>
+</view>
+<view class="namebox">
+  <view class="nameboxleft">
+    <view class="nameboxleft1">
+      <view class="namenumber">人物年龄段</view>
+      <view class="data">
+        <picker value="{{number1[index2]}}" range="{{number1}}" bindchange="bindPickerChangeNumber1" >
+          <view>
+          {{number1[index2]}}
+          <text class="cuIcon-right"></text>
+          </view>
+        </picker>
+      </view> 
+    </view>
+  </view>
+</view>
+<view class="generate">生成</view>
+<view class="result" style="color:#000000;font-size:25rpx">外貌特征</view>
+<view class="result">发型：</view>
+<view class="result">眉毛：</view>
+<view class="result">眼睛：</view>
+<view class="result">嘴：</view>
+<view class="result">鼻子：</view>
+<view class="result">饰品：</view>
+<view class="result">衣服：</view>
+<view class="result">鞋：</view>
+<view class="result">身材：</view>
+<view class="result">气质：</view>

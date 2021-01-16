@@ -1,2 +1,17 @@
 <!--pages/Setting/setting.wxml-->
-<text>pages/Setting/setting.wxml</text>
+<view class="bg-img align-center" 
+style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/aaa.png?sign=c2346cc309f60fa3af06c53bf194425e&t=1610611793');height: 180px;">
+</view>
+<view style="height:60px;width:100%;">
+  <image mode="scaleToFill" class="gif-black response"
+  src="https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/wave.gif?sign=317a8a385617ef7e2a56d9dd5fe15eb3&t=1610610834"
+  style="z-index:-10;margin-top:-100px;height:100rpx"></image>
+</view>
+<view class="top">
+  <view class="input">
+    <view class="cuIcon-search" style="font-size:40rpx;float:left"></view>
+    <input placeholder="输入：例如（衣服）"/>
+  </view>
+  <view class="search">搜索</view>
+
+</view>

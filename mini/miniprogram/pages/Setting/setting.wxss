@@ -1,1 +1,25 @@
 /* pages/Setting/setting.wxss */
+.top{
+  width:90%;
+  height:100rpx;
+  margin-left:5%;
+  margin-top:20rpx;
+  float:left;
+}
+.input{
+  width:80%;
+  height:80rpx;
+  border-radius: 40rpx;
+  border:1rpx solid #4b504f;
+  float:left;
+  padding:20rpx;
+}
+.search{
+  width:100rpx;
+  height:80rpx;
+  border-radius: 10rpx;
+  background-color:#5abeb1;
+  margin-left:85%;
+  color: white;
+  padding:20rpx;
+}

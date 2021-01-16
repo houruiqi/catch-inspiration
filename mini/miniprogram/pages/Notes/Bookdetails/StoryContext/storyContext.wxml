@@ -1,0 +1,17 @@
+<!--pages/Notes/Bookdetails/StoryContext/storyContext.wxml-->
+<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view style="font-weight:bold" class="text-black" slot="content">修改内容</view>
+</cu-custom>
+<view class="inspiration">
+  <view style="float:left">章节标题：</view>
+  <input value="破云"/>
+</view>
+<view class="context">
+  <view>章节内容：</view>
+  <textarea class="context1" value="啊哈哈哈哈"></textarea>
+</view>
+<view class="determine" bindtap="determine">
+  确定修改
+</view>
+

@@ -1,0 +1,44 @@
+<!--pages/Notes/Bookdetails/PeopleContext/Peoplecontext.wxml-->
+<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view style="font-weight:bold" class="text-black" slot="content">人物详情修改</view>
+</cu-custom>
+<view class="result">
+  <view style="float:left;">姓名：</view>
+  <input value="输入名字"/>
+</view>
+<view class="result">
+  <view style="float:left">性别：</view>
+  <input value="输入性别"/>
+</view>
+<view class="result">
+  <view style="float:left">身高：</view>
+  <input value="输入身高"/>
+</view>
+<view class="result">
+  <view style="float:left">体重：</view>
+  <input value="输入体重"/>
+</view>
+<view class="result">
+  <view style="float:left">身份：</view>
+  <input value="输入身份"/>
+</view>
+<view class="result">
+  <view style="float:left">身体状况：</view>
+  <input value="输入身体状况"/>
+</view>
+<view class="result">
+  <view style="float:left">心理状况：</view>
+  <input value="输入心理状况"/>
+</view>
+<view class="result">
+  <view style="float:left">性格：</view>
+  <input value="输入性格"/>
+</view>
+<view class="result" style="border:#ffffff">
+  <view>外貌特征：</view>
+  <textarea class="appearance" value="输入外貌特征"></textarea>
+</view>
+<view class="determine" bindtap="determine">
+  确定修改
+</view>

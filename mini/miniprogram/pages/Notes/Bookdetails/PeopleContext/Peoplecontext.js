@@ -1,4 +1,4 @@
-// pages/Assistance/assistance.js
+// pages/Notes/Bookdetails/PeopleContext/Peoplecontext.js
 Page({
 
   /**
@@ -7,6 +7,13 @@ Page({
   data: {
 
   },
+  determine:function(){
+    wx.navigateTo({
+      url: '/pages/Notes/Bookdetails/bookdetails',
+      success: function () {}
+    })
+  },
+  
 
   /**
    * 生命周期函数--监听页面加载
@@ -62,29 +69,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  name:function(e){
-      wx.navigateTo({
-        url: '/pages/Assistance/Name/name',
-        success: function () {}
-      })
-  },
-  place:function(e){
-    wx.navigateTo({
-      url: '/pages/Assistance/Place/place',
-      success: function () {}
-    })
-  },
-  appearance:function(e){
-    wx.navigateTo({
-      url: '/pages/Assistance/Appearance/appearance',
-      success: function () {}
-    })
-  },
-  persona:function(e){
-    wx.navigateTo({
-      url: '/pages/Assistance/Persona/persona',
-      success: function () {}
-    })
-  },
+  }
 })

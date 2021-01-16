@@ -1,0 +1,36 @@
+<!--pages/Assistance/Persona/persona.wxml-->
+<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view style="font-weight:bold" class="text-black" slot="content">人设生成器</view>
+</cu-custom>
+<view class="nameboxtop">选择生成的人物时代，即可获得相应的随机生成的人名</view>
+<view class="namebox">
+  <view class="nameboxleft">
+    <view class="nameboxleft1">
+      <view class="namenumber">人物时代</view>
+      <view class="data">
+        <picker value="{{data[index]}}" range="{{data}}" bindchange="bindPickerChangeData" >
+          <view>
+          {{data[index]}}
+          <text class="cuIcon-right"></text>
+          </view>
+        </picker>
+      </view> 
+    </view>
+  </view>
+</view>
+<view class="generate">生成</view>
+<view class="result" style="color:#000000;font-size:25rpx">生成结果</view>
+<view class="result">姓名：</view>
+<view class="result">性别：</view>
+<view class="result">年龄：</view>
+<view class="result">身高：</view>
+<view class="result">体重：</view>
+<view class="result">出身：</view>
+<view class="result">家庭状况：</view>
+<view class="result">职业：</view>
+<view class="result">性格：</view>
+<view class="result">身体状况：</view>
+<view class="result">爱好：</view>
+<view class="result">立场：</view>
+

@@ -1,4 +1,4 @@
-// pages/Assistance/assistance.js
+// pages/Notes/Bookdetails/People/people.js
 Page({
 
   /**
@@ -6,6 +6,12 @@ Page({
    */
   data: {
 
+  },
+  determine:function(){
+    wx.navigateTo({
+      url: '/pages/Notes/Bookdetails/bookdetails',
+      success: function () {}
+    })
   },
 
   /**
@@ -62,29 +68,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  name:function(e){
-      wx.navigateTo({
-        url: '/pages/Assistance/Name/name',
-        success: function () {}
-      })
-  },
-  place:function(e){
-    wx.navigateTo({
-      url: '/pages/Assistance/Place/place',
-      success: function () {}
-    })
-  },
-  appearance:function(e){
-    wx.navigateTo({
-      url: '/pages/Assistance/Appearance/appearance',
-      success: function () {}
-    })
-  },
-  persona:function(e){
-    wx.navigateTo({
-      url: '/pages/Assistance/Persona/persona',
-      success: function () {}
-    })
-  },
+  }
 })

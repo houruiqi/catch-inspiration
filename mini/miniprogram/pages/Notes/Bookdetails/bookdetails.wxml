@@ -1,0 +1,75 @@
+<!--pages/Notes/Bookdetails/bookdetails.wxml-->
+<!-- <cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}">
+  <view style="font-weight:bold" class="text-black" slot="content">书籍详情</view>
+</cu-custom> -->
+<view class="bg-img padding-tb-xl" 
+    style="background-image: url('https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389');height: 180rpx;">
+    <view class="padding-xl text-white">
+      <view class="cuIcon-back" style="float:left;font-size:40rpx;" bindtap="back"></view>
+      <view style="margin-left:40%;color:#000000;font-weight:bold;font-size:35rpx">书籍详情</view>
+    </view>
+</view>
+<view class="bg-img align-center" 
+style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/aaa.png?sign=c2346cc309f60fa3af06c53bf194425e&t=1610611793');height: 180px;">
+</view>
+<view>
+  <view class="booktop">
+    <view class="booktop1" bindtap="booktop" style="{{booktop==0?'color:#5abeb1':'color:#000000'}}">灵感</view>
+    <view class="booktop1" bindtap="booktop1" style="{{booktop==1?'color:#5abeb1':'color:#000000'}}">故事梗概</view>
+    <view class="booktop1" bindtap="booktop2" style="{{booktop==2?'color:#5abeb1':'color:#000000'}}">人物</view>
+  </view>
+</view>
+<view style="{{booktop==0?'display:block':'display:none'}}">
+  <view class="bookbottom" bindtap="toughtcontext">
+    <view style="font-size:30rpx;color:#000000">思路</view>
+    <view style="font-size:25rpx;margin-top:10rpx;color:#363333">思路简介</view>
+  </view>
+  <view class="bookbottom">
+    <view style="font-size:30rpx;color:#000000">思路</view>
+    <view style="font-size:25rpx;margin-top:10rpx;color:#363333">思路简介</view>
+  </view>
+  <view class="bookadd" bindtap="thought">
+    <text class="cuIcon-add"></text>
+  </view> 
+</view>
+<view style="{{booktop==1?'display:block':'display:none'}}">
+  <view class="bookbottom" bindtap="storycontext">
+    <view style="font-size:30rpx;color:#000000">第一章</view>
+    <view style="font-size:25rpx;margin-top:10rpx;color:#363333">内容</view>
+  </view>
+  <view class="bookbottom">
+    <view style="font-size:30rpx;color:#000000">第二章</view>
+    <view style="font-size:25rpx;margin-top:10rpx;color:#363333">内容</view>
+  </view>
+  <view class="bookadd" bindtap="story">
+    <text class="cuIcon-add"></text>
+  </view> 
+</view>
+<view style="{{booktop==2?'display:block':'display:none'}}">
+  <view class="mainpeople">
+    <view class="maintop">
+      <view class="maintop1">主角</view>
+      <view class="maintopadd">
+        <text class="cuIcon-add" bindtap="peopleadd"></text>
+      </view>
+    </view>
+    <view class="bookbottom" bindtap="people">
+      <view style="font-size:30rpx;color:#000000">长庚</view>
+      <view style="font-size:25rpx;margin-top:10rpx;color:#363333">混血小甜心</view>
+    </view>
+  </view>
+  <view class="mainpeople">
+    <view class="maintop">
+      <view class="maintop1">配角</view>
+      <view class="maintopadd">
+        <text class="cuIcon-add"></text>
+      </view>
+    </view>
+    <view class="bookbottom">
+      <view style="font-size:30rpx;color:#000000">长庚</view>
+      <view style="font-size:25rpx;margin-top:10rpx;color:#363333">混血小甜心</view>
+    </view>
+  </view>
+</view>
+
+

@@ -1,4 +1,30 @@
 <!--pages/Notes/notes.wxml-->
-<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389">
-  <view style="font-weight:bold" slot="content">涂鸦像素</view>
-</cu-custom>
+<view class="bg-img align-center" 
+style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/aaa.png?sign=c2346cc309f60fa3af06c53bf194425e&t=1610611793');height: 180px;">
+</view>
+<view style="height:60px;width:100%;">
+  <image mode="scaleToFill" class="gif-black response"
+  src="https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/wave.gif?sign=317a8a385617ef7e2a56d9dd5fe15eb3&t=1610610834"
+  style="z-index:-10;margin-top:-100px;height:100rpx"></image>
+</view>
+<view class="box" style="font-size:60rpx" bindtap="bookbullet">
+  <text class="cuIcon-add"></text>
+</view>
+<view class="box" bindtap="bookdetails">
+  破云
+</view>
+<view class="box">
+  
+</view>
+<view class="box">
+  
+</view>
+<view class="bookbullet" style="{{bullet==1?'display:block':'display:none'}}"></view>
+<view class="bookbullet-content" style="{{bullet==1?'display:block':'display:none'}}">
+  <view style="float:left">书籍名称：</view>
+  <input class="bookinput" placeholder="单行输入" style="font-size:30rpx"/>
+  <view style="margin-top:20rpx">简介：</view>
+  <textarea class="introduction"></textarea>
+  <view class="determine" bindtap="determine">确定</view>
+</view>
+
