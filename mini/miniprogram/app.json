@@ -14,7 +14,8 @@
     "pages/Assistance/Place/place",
     "pages/Setting/setting",
     "pages/My/my",
-    "pages/Assistance/Name/name"
+    "pages/Assistance/Name/name",
+    "pages/Test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,12 @@
+<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389">
+  <view style="font-weight:bold" slot="content">捕获灵感</view>
+</cu-custom>
+<view class="padding">
+  <button class="cu-btn round bg-green" bindtap="addbook">添加书籍</button>
+</view>
+<view class="padding">
+  <button class="cu-btn round bg-green" bindtap="deletebook">删除书籍</button>
+</view>
+<view class="padding">
+  <button class="cu-btn round bg-green" bindtap="updatebook">改书籍</button>
+</view>
