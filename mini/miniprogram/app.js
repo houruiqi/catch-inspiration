@@ -6,6 +6,7 @@ App({
       userInfo: null,
       _id:'',
       _openid:'',
+      booktop:0
     } // 务必确保这一行在前面
      
     // 登录
