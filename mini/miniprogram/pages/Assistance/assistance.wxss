@@ -1,21 +1,40 @@
 /* pages/Assistance/assistance.wxss */
+page{
+  background-color:rgb(240, 240, 240);
+}
 .box{
-  width:80%;
-  margin-left:10%;
+  width:90%;
+  margin-left:4%;
   height:200rpx;
-  margin-top:10%;
-  border-radius: 20rpx;
-  border:1rpx solid #7a7474;
+  margin-top:5%;
+  border-radius: 10rpx;
+  /* border:1rpx solid #7a7474; */
+}
+.frame{
+  float:left;
 }
 .text{
-  font-size:50rpx;
-  margin-top:50rpx;
-  margin-left:20rpx;
-  float:left;
+  font-size:40rpx;
+  margin-top:40rpx;
+  margin-left:30rpx;
+}
+.englishtext{
+  font-size:25rpx;
+  margin-left:30rpx;
+  margin-top:20rpx;
+  color: rgb(135, 135, 135);
 }
 .icon{
-  font-size:60rpx;
-  margin-top:50rpx;
-  margin-left:120rpx;
+  font-size:85rpx;
+  margin-top:45rpx;
+  margin-left:55rpx;
   float:left;
+  
+}
+.icon1{
+  font-size:60rpx;
+  margin-top:60rpx;
+  margin-right:30rpx;
+  float:right;
+  color: rgb(206, 206, 206);
 }

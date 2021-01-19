@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/Notes/notes",
     "pages/Assistance/assistance",
+    "pages/Assistance/Appearance/appearance",
+    "pages/Assistance/Name/name",
+    "pages/Notes/notes",
     "pages/Notes/Bookdetails/bookdetails",
     "pages/Notes/Bookdetails/Story/story",
     "pages/Notes/Bookdetails/People/people",
@@ -10,11 +12,9 @@
     "pages/Notes/Bookdetails/Thought/thought",
     "pages/Notes/Bookdetails/ThoughtContext/thoughtContext",
     "pages/Assistance/Persona/persona",
-    "pages/Assistance/Appearance/appearance",
     "pages/Assistance/Place/place",
     "pages/Setting/setting",
     "pages/My/my",
-    "pages/Assistance/Name/name",
     "pages/Test/test"
   ],
   "window": {

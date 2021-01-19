@@ -59,8 +59,8 @@
 <view class="namebox">
   <view class="nameboxleft">
     <view class="nameboxleft1">
-      <view class="namenumber">指定姓氏（选填）</view>
-      <input class="number1" placeholder="张" type="text"/>  
+      <view class="namenumber">指定姓氏：</view>
+      <input class="number1" placeholder="选填" type="text"/>  
     </view>
   </view>
 </view>
