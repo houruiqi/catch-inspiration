@@ -5,11 +5,11 @@
 </cu-custom>
 <view class="inspiration">
   <view style="float:left">章节标题：</view>
-  <input placeholder="在此处输入"/>
+  <input placeholder="在此处输入" bindinput='getInputValue' value="{{storyValue}}"/>
 </view>
 <view class="context">
   <view>章节内容：</view>
-  <textarea class="context1"></textarea>
+  <textarea class="context1" bindinput='getInputContext' value="{{storyContext}}"></textarea>
 </view>
 <view class="determine" bindtap="determine">
   确定添加

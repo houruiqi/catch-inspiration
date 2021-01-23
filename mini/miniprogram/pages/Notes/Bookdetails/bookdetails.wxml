@@ -9,9 +9,17 @@
       <view style="margin-left:40%;color:#000000;font-weight:bold;font-size:35rpx">书籍详情</view>
     </view>
 </view>
-<view class="bg-img align-center" 
+<!-- <view class="bg-img align-center" 
 style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/aaa.png?sign=c2346cc309f60fa3af06c53bf194425e&t=1610611793');height: 180px;">
-</view>
+</view> -->
+<view data-target="DialogModal1" 
+      class="bg-img bg-mask padding-tb-xl"
+      style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/aaa.png?sign=c2346cc309f60fa3af06c53bf194425e&t=1610611793');height: 414rpx;">
+        <view class="padding-xl text-white">
+          <view class="padding-xs text-xl">简介:</view>
+          <view class="padding-xs">{{introduction}}</view>
+        </view>
+      </view>
 <view>
   <view class="booktop">
     <view class="booktop1" bindtap="booktop" style="{{booktop==0?'color:#5abeb1':'color:#000000'}}">灵感</view>
@@ -20,26 +28,22 @@ style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749
   </view>
 </view>
 <view style="{{booktop==0?'display:block':'display:none'}}">
-  <view class="bookbottom" bindtap="toughtcontext">
-    <view style="font-size:30rpx;color:#000000">思路</view>
-    <view style="font-size:25rpx;margin-top:10rpx;color:#363333">思路简介</view>
-  </view>
-  <view class="bookbottom">
-    <view style="font-size:30rpx;color:#000000">思路</view>
-    <view style="font-size:25rpx;margin-top:10rpx;color:#363333">思路简介</view>
+  <view class="bookbottom" wx:for="{{inspiration}}" wx:key="index" wx:for-item="item" >
+    <view bindtap="toughtcontext" id="{{index}}" bindlongtap="tag" bindtouchstart="mytouchstart" bindtouchend="mytouchend">
+      <view style="font-size:30rpx;color:#000000">{{item.thinking}}</view>
+      <view style="font-size:25rpx;margin-top:10rpx;color:#363333">{{item.thinkingIntroduction}}</view>
+    </view>
   </view>
   <view class="bookadd" bindtap="thought">
     <text class="cuIcon-add"></text>
   </view> 
 </view>
 <view style="{{booktop==1?'display:block':'display:none'}}">
-  <view class="bookbottom" bindtap="storycontext">
-    <view style="font-size:30rpx;color:#000000">第一章</view>
-    <view style="font-size:25rpx;margin-top:10rpx;color:#363333">内容</view>
-  </view>
-  <view class="bookbottom">
-    <view style="font-size:30rpx;color:#000000">第二章</view>
-    <view style="font-size:25rpx;margin-top:10rpx;color:#363333">内容</view>
+  <view class="bookbottom" wx:for="{{outline}}" wx:key="index" wx:for-item="item">
+    <view bindtap="storycontext" id="{{index}}" bindlongtap="tag1" bindtouchstart="mytouchstart" bindtouchend="mytouchend">
+      <view style="font-size:30rpx;color:#000000">{{item.story}}</view>
+      <view style="font-size:25rpx;margin-top:10rpx;color:#363333">{{item.storyContext}}</view>
+    </view>
   </view>
   <view class="bookadd" bindtap="story">
     <text class="cuIcon-add"></text>
@@ -53,23 +57,51 @@ style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749
         <text class="cuIcon-add" bindtap="peopleadd"></text>
       </view>
     </view>
-    <view class="bookbottom" bindtap="people">
-      <view style="font-size:30rpx;color:#000000">长庚</view>
-      <view style="font-size:25rpx;margin-top:10rpx;color:#363333">混血小甜心</view>
+    <view class="bookbottom" wx:for="{{leadrole}}" wx:key="index" wx:for-item="item">
+      <view bindtap="people" id="{{index}}" bindlongtap="tag2" bindtouchstart="mytouchstart" bindtouchend="mytouchend">
+        <view style="font-size:30rpx;color:#000000">{{item.name}}</view>
+        <view style="font-size:25rpx;margin-top:10rpx;color:#363333">{{item.sex}}</view>
+      </view>
     </view>
   </view>
   <view class="mainpeople">
     <view class="maintop">
       <view class="maintop1">配角</view>
       <view class="maintopadd">
-        <text class="cuIcon-add"></text>
+        <text class="cuIcon-add" bindtap="people1add"></text>
       </view>
     </view>
-    <view class="bookbottom">
-      <view style="font-size:30rpx;color:#000000">长庚</view>
-      <view style="font-size:25rpx;margin-top:10rpx;color:#363333">混血小甜心</view>
+    <view class="bookbottom" wx:for="{{supportrole}}" wx:key="index" wx:for-item="item">
+      <view bindtap="people1" id="{{index}}" bindlongtap="tag3" bindtouchstart="mytouchstart" bindtouchend="mytouchend">
+        <view style="font-size:30rpx;color:#000000">{{item.name}}</view>
+        <view style="font-size:25rpx;margin-top:10rpx;color:#363333">{{item.sex}}</view>
+      </view>
     </view>
   </view>
+</view>
+<view class="bookbullet" style="{{bullet==2?'display:block':'display:none'}}"></view>
+<view class="bookbullet" style="{{bullet==1?'display:block':'display:none'}}"></view>
+<view class="bookbullet" style="{{bullet==3?'display:block':'display:none'}}"></view>
+<view class="bookbullet" style="{{bullet==4?'display:block':'display:none'}}"></view>
+<view class="bookbullet-content1" style="{{bullet==2?'display:block':'display:none'}}">
+  <view>是否删除</view>
+  <view class="determine" bindtap="delete">确定</view>
+  <view class="cancel" bindtap="cancel">取消</view>
+</view>
+<view class="bookbullet-content1" style="{{bullet==1?'display:block':'display:none'}}">
+  <view>是否删除</view>
+  <view class="determine" bindtap="delete1">确定</view>
+  <view class="cancel" bindtap="cancel">取消</view>
+</view>
+<view class="bookbullet-content1" style="{{bullet==3?'display:block':'display:none'}}">
+  <view>是否删除</view>
+  <view class="determine" bindtap="delete2">确定</view>
+  <view class="cancel" bindtap="cancel">取消</view>
+</view>
+<view class="bookbullet-content1" style="{{bullet==4?'display:block':'display:none'}}">
+  <view>是否删除</view>
+  <view class="determine" bindtap="delete3">确定</view>
+  <view class="cancel" bindtap="cancel">取消</view>
 </view>
 
 

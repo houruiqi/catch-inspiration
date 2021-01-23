@@ -1,44 +1,44 @@
-<!--pages/Notes/Bookdetails/People/people.wxml-->
+<!--pages/Notes/Bookdetails/PeopleContext1/Peoplecontext1.wxml-->
 <cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}">
   <view slot="backText">返回</view>
   <view style="font-weight:bold" class="text-black" slot="content">人物详情修改</view>
 </cu-custom>
 <view class="result">
   <view style="float:left;">姓名：</view>
-  <input placeholder="请输入" bindinput='getName' value="{{name}}"/>
+  <input value="输入名字" bindinput='getName' value="{{name}}"/>
 </view>
 <view class="result">
   <view style="float:left">性别：</view>
-  <input placeholder="请输入" bindinput='getSex' value="{{sex}}"/>
+  <input value="输入性别" bindinput='getSex' value="{{sex}}"/>
 </view>
 <view class="result">
   <view style="float:left">身高：</view>
-  <input placeholder="请输入" bindinput='getHeight' value="{{height}}"/>
+  <input value="输入身高" bindinput='getHeight' value="{{height}}"/>
 </view>
 <view class="result">
   <view style="float:left">体重：</view>
-  <input placeholder="请输入" bindinput='getWeight' value="{{weight}}"/>
+  <input value="输入体重" bindinput='getWeight' value="{{weight}}"/>
 </view>
 <view class="result">
   <view style="float:left">身份：</view>
-  <input placeholder="请输入" bindinput='getIdentity' value="{{identity}}"/>
+  <input value="输入身份" bindinput='getIdentity' value="{{identity}}"/>
 </view>
 <view class="result">
   <view style="float:left">身体状况：</view>
-  <input placeholder="请输入" bindinput='getBody' value="{{body}}"/>
+  <input value="输入身体状况" bindinput='getBody' value="{{body}}"/>
 </view>
 <view class="result">
   <view style="float:left">心理状况：</view>
-  <input placeholder="请输入" bindinput='getPsychology' value="{{psychology}}"/>
+  <input value="输入心理状况" bindinput='getPsychology' value="{{psychology}}"/>
 </view>
 <view class="result">
   <view style="float:left">性格：</view>
-  <input placeholder="请输入" bindinput='getCharacter' value="{{character}}"/>
+  <input value="输入性格" bindinput='getCharacter' value="{{character}}"/>
 </view>
 <view class="result" style="border:#ffffff">
   <view>外貌特征：</view>
-  <textarea class="appearance" placeholder="请输入" bindinput='getAppearance' value="{{appearance}}"></textarea>
+  <textarea class="appearance" value="输入外貌特征" bindinput='getAppearance' value="{{appearance}}"></textarea>
 </view>
 <view class="determine" bindtap="determine">
-  确定添加
+  确定修改
 </view>

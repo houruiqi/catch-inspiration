@@ -1,4 +1,4 @@
-// pages/Notes/Bookdetails/PeopleContext/Peoplecontext.js
+// pages/Notes/Bookdetails/PeopleContext1/Peoplecontext1.js
 const app = getApp()
 Page({
 
@@ -94,27 +94,76 @@ Page({
       psychology:e.detail.value
     })
   },
-   //性格
-   getCharacter:function(e){
-    console.log(e.detail)
-    this.setData({
-      character:e.detail.value
-    })
-  },
-   //外貌
-   getAppearance:function(e){
-    console.log(e.detail)
-    this.setData({
-      appearance:e.detail.value
-    })
-  },
+    //输入名字
+    getName:function(e){
+      console.log(e.detail)
+      this.setData({
+        name:e.detail.value
+      })
+    },
+     //输入性别
+     getSex:function(e){
+      console.log(e.detail)
+      this.setData({
+        sex:e.detail.value
+      })
+    },
+     //输入身高
+     getHeight:function(e){
+      console.log(e.detail)
+      this.setData({
+        height:e.detail.value
+      })
+    },
+     //输入体重
+     getWeight:function(e){
+      console.log(e.detail)
+      this.setData({
+        weight:e.detail.value
+      })
+    },
+     //输入身份
+     getIdentity:function(e){
+      console.log(e.detail)
+      this.setData({
+        identity:e.detail.value
+      })
+    },
+     //输入身体状况
+     getBody:function(e){
+      console.log(e.detail)
+      this.setData({
+        body:e.detail.value
+      })
+    },
+     //输入心理状况
+     getPsychology:function(e){
+      console.log(e.detail)
+      this.setData({
+        psychology:e.detail.value
+      })
+    },
+     //性格
+     getCharacter:function(e){
+      console.log(e.detail)
+      this.setData({
+        character:e.detail.value
+      })
+    },
+     //外貌
+     getAppearance:function(e){
+      console.log(e.detail)
+      this.setData({
+        appearance:e.detail.value
+      })
+    },
   
 //修改人物
 updatepeople: function(){
   const db = wx.cloud.database()
   db.collection('books').doc(app.globalData.id).update({
     data: {
-      leadrole: this.data.leadrole
+      supportrole: this.data.leadrole
     },
     success: res => {
     },
@@ -137,8 +186,8 @@ updatepeople: function(){
       success: res => {  
         for(var i=0;i<res.result.data.length;i++){
           if(app.globalData.id==res.result.data[i]._id){
-            people=res.result.data[i].leadrole[app.globalData.index];
-            leadrole=res.result.data[i].leadrole;
+            people=res.result.data[i].supportrole[app.globalData.index];
+            leadrole=res.result.data[i].supportrole;
           }
         }
         this.setData({
