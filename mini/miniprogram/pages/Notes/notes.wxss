@@ -74,7 +74,7 @@
 }
 .cancel{
   width:110rpx;
-  height:60rpx;
+  height:50rpx;
   border:1rpx solid #000000;
   border-radius: 8rpx;
   margin-left:68%;

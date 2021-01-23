@@ -22,7 +22,7 @@ style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749
   <view style="margin-top:20rpx">简介：</view>
   <textarea class="introduction" bindinput='getInputIntroduction' value="{{introduction}}"></textarea>
   <view class="determinebook" bindtap="determine">确定</view>
-  <view class="cancelbook" bindtap="determine">取消</view>
+  <view class="cancelbook" bindtap="cancel">取消</view>
 </view>
 <view class="bookbullet" style="{{bullet==2?'display:block':'display:none'}}"></view>
 <view class="bookbullet-content1" style="{{bullet==2?'display:block':'display:none'}}">
