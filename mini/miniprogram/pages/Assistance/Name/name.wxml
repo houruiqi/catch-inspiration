@@ -60,12 +60,14 @@
   <view class="nameboxleft">
     <view class="nameboxleft1">
       <view class="namenumber">指定姓氏：</view>
-      <input class="number1" placeholder="选填" type="text"/>  
+      <input class="number1" bindinput="getinputvalue" placeholder="选填" type="text"/>  
     </view>
   </view>
 </view>
-<view class="generate">生成</view>
+<view class="generate" bindtap="generate">生成</view>
 <view>
-  <view class="nameGenerate"></view>
+  <view class="nameGenerate">
+    <view wx:for="{{name}}" class="content">{{item}}</view>
+  </view> 
 </view>
 

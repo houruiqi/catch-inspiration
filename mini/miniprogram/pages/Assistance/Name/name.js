@@ -1,4 +1,5 @@
 // pages/Assistance/Name/name.js
+var content = require("../../data/json")
 Page({
 
   /**
@@ -12,6 +13,8 @@ Page({
     index1:0,
     index2:0,
     index3:0,
+    inputsurname:'',
+    name:""
   },
   bindPickerChangeName: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value);
@@ -37,7 +40,53 @@ Page({
     index3: e.detail.value,  //每次选择了下拉列表的内容同时修改下标然后修改显示的内容，显示的内容和选择的内容一致
    })
   },
-
+  getinputvalue:function(e){
+    // console.log(e.detail);
+    this.setData({
+      inputsurname:e.detail.value
+    })
+  },
+  generate:function(){
+    var sumname1 =[];
+    var surname1,name1;
+    // console.log(this.data.sum[this.data.index3]);
+    for(var i = 0;i<this.data.sum[this.data.index3];i++){
+      if(this.data.inputsurname == ""){
+         if(this.data.index == 0){
+          surname1 = content.singularsurname[Math.floor(Math.random()*content.singularsurname.length)];
+        }
+        else{
+          surname1 = content.complexsurname[Math.floor(Math.random()*content.complexsurname.length)];
+        }
+      }
+      else{
+        surname1 = this.data.inputsurname;
+      }
+      if(this.data.index2 == 0){
+        var namecontent = content.name.concat(content.boyname);
+        if(this.data.index1 == 0){
+          name1 = namecontent[Math.floor(Math.random()*namecontent.length)];
+        }
+        else{
+          name1 = namecontent[Math.floor(Math.random()*namecontent.length)]+namecontent[Math.floor(Math.random()*namecontent.length)];
+        }
+      }
+      else{
+        var namecontent = content.name.concat(content.girlname);
+        if(this.data.index1 == 0){
+          name1 = namecontent[Math.floor(Math.random()*namecontent.length)];
+        }
+        else{
+          name1 = namecontent[Math.floor(Math.random()*namecontent.length)]+namecontent[Math.floor(Math.random()*namecontent.length)];
+        }
+      }
+      sumname1[i] = surname1 + name1;
+    }
+    console.log(sumname1)
+    this.setData({
+      name:sumname1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

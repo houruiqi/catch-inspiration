@@ -30,7 +30,7 @@
     </view>
   </view>
 </view>
-<view class="namebox">
+<!-- <view class="namebox">
   <view class="nameboxleft">
     <view class="nameboxleft1">
       <view class="namenumber">人物年龄段</view>
@@ -44,22 +44,52 @@
       </view> 
     </view>
   </view>
-</view>
-<view class="generate">生成</view>
+</view> -->
+<view class="generate" bindtap="generate">生成</view>
 <view>
   <text class="cuIcon-titles lg text-gray vertical"></text>
   <view class="feature">外貌特征</view>
 </view>
 <view style="margin-top:55rpx;">
+<view style="width:100%;height:80rpx;">
   <view class="result">发型：</view>
+  <view class="end">{{hairstyle}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">眉毛：</view>
+  <view class="end">{{eyebrow}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">眼睛：</view>
-  <view class="result">嘴：</view>
+  <view class="end">{{eye}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">鼻子：</view>
+  <view class="end">{{nose}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
+  <view class="result">嘴：</view>
+  <view class="end">{{mouth}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">饰品：</view>
+  <view class="end">{{ornament}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">衣服：</view>
+  <view class="end">{{cloth}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">鞋：</view>
+  <view class="end">{{shoes}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">身材：</view>
+  <view class="end">{{figure}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">气质：</view>
+  <view class="end">{{temperament}}</view>
+</view>
 </view>
 

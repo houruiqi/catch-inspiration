@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/Assistance/assistance",
     "pages/Notes/notes",
     "pages/Notes/Bookdetails/PeopleContext1/Peoplecontext1",
-    "pages/Assistance/assistance",
     "pages/Assistance/Appearance/appearance",
     "pages/Assistance/Name/name",
     "pages/Notes/Bookdetails/bookdetails",

@@ -19,22 +19,58 @@
     </view>
   </view>
 </view>
-<view class="generate">生成</view>
+<view class="generate" bindtap="generate">生成</view>
 <view>
   <text class="cuIcon-titles lg text-gray vertical"></text>
   <view class="feature">生成结果</view>
 </view>
 <view style="margin-top:55rpx;">
+<view style="width:100%;height:80rpx;">
   <view class="result">姓名：</view>
+  <view class="end">{{name}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">性别：</view>
+  <view class="end">{{gender}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">年龄：</view>
+  <view class="end">{{age}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">身高：</view>
+  <view class="end">{{height}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">体重：</view>
+  <view class="end">{{weight}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">出身：</view>
+  <view class="end">{{birth}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">家庭状况：</view>
+  <view class="end">{{family}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">职业：</view>
+  <view class="end">{{occupation}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">性格：</view>
+  <view class="end">{{character}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">身体状况：</view>
+  <view class="end">{{body}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">爱好：</view>
+  <view class="end">{{hobby}}</view>
+</view>
+<view style="width:100%;height:80rpx;">
   <view class="result">立场：</view>
+  <view class="end">{{position}}</view>
+</view>
 </view>

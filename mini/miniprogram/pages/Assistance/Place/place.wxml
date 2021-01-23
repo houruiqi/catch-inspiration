@@ -45,7 +45,9 @@
     </view>
   </view>
 </view>
-<view class="generate">生成</view>
+<view class="generate" bindtap="generate">生成</view>
 <view>
-  <view class="nameGenerate"></view>
+  <view class="nameGenerate">
+    <view wx:for="{{place}}" class="content">{{item}}</view>
+  </view>
 </view>
