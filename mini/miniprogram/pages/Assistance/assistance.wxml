@@ -1,20 +1,36 @@
 <!--pages/Assistance/assistance.wxml-->
 <cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389">
   <view style="font-weight:bold" class="text-black" slot="content">写作辅助</view>
-</cu-custom>
+</cu-custom> 
 <view class="bg-white box" bindtap="name">
-  <view class="text">人名生成器</view> 
   <text class="cuIcon-friend icon"></text>
+  <view class="frame">
+    <view class="text">人名生成器</view> 
+    <view class="englishtext">Generate person's name</view>
+  </view>
+  <text class="cuIcon-right icon1"></text>
 </view>
 <view class="bg-white box" bindtap="place">
-  <view class="text">地名生成器</view> 
   <text class="cuIcon-home icon"></text>
+  <view class="frame">
+    <view class="text">地名生成器</view> 
+    <view class="englishtext">Generate place's name</view>
+  </view>
+  <text class="cuIcon-right icon1"></text>
 </view>
 <view class="bg-white box" bindtap="appearance">
-  <view class="text">外貌生成器</view> 
   <text class="cuIcon-people icon"></text>
+  <view class="frame">
+    <view class="text">外貌生成器</view> 
+    <view class="englishtext">Generate appearance</view>
+  </view>
+  <text class="cuIcon-right icon1"></text>
 </view>
 <view class="bg-white box" bindtap="persona">
-  <view class="text">人设生成器</view> 
   <text class="cuIcon-news icon"></text>
+  <view class="frame">
+    <view class="text">人设生成器</view> 
+    <view class="englishtext">Generate character setting</view>
+  </view>
+  <text class="cuIcon-right icon1"></text>
 </view>

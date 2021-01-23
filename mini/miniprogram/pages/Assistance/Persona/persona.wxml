@@ -1,5 +1,5 @@
 <!--pages/Assistance/Persona/persona.wxml-->
-<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}">
+<cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}"> 
   <view slot="backText">返回</view>
   <view style="font-weight:bold" class="text-black" slot="content">人设生成器</view>
 </cu-custom>
@@ -20,17 +20,21 @@
   </view>
 </view>
 <view class="generate">生成</view>
-<view class="result" style="color:#000000;font-size:25rpx">生成结果</view>
-<view class="result">姓名：</view>
-<view class="result">性别：</view>
-<view class="result">年龄：</view>
-<view class="result">身高：</view>
-<view class="result">体重：</view>
-<view class="result">出身：</view>
-<view class="result">家庭状况：</view>
-<view class="result">职业：</view>
-<view class="result">性格：</view>
-<view class="result">身体状况：</view>
-<view class="result">爱好：</view>
-<view class="result">立场：</view>
-
+<view>
+  <text class="cuIcon-titles lg text-gray vertical"></text>
+  <view class="feature">生成结果</view>
+</view>
+<view style="margin-top:55rpx;">
+  <view class="result">姓名：</view>
+  <view class="result">性别：</view>
+  <view class="result">年龄：</view>
+  <view class="result">身高：</view>
+  <view class="result">体重：</view>
+  <view class="result">出身：</view>
+  <view class="result">家庭状况：</view>
+  <view class="result">职业：</view>
+  <view class="result">性格：</view>
+  <view class="result">身体状况：</view>
+  <view class="result">爱好：</view>
+  <view class="result">立场：</view>
+</view>

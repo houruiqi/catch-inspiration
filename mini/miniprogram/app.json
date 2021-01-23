@@ -1,8 +1,14 @@
 {
   "pages": [
+<<<<<<< HEAD
     "pages/Notes/notes",
     "pages/Notes/Bookdetails/PeopleContext1/Peoplecontext1",
+=======
+>>>>>>> 94d321912db8e6b11e6b8d9f82ea50524181eb3b
     "pages/Assistance/assistance",
+    "pages/Assistance/Appearance/appearance",
+    "pages/Assistance/Name/name",
+    "pages/Notes/notes",
     "pages/Notes/Bookdetails/bookdetails",
     "pages/Notes/Bookdetails/Story/story",
     "pages/Notes/Bookdetails/People/people",
@@ -12,11 +18,9 @@
     "pages/Notes/Bookdetails/Thought/thought",
     "pages/Notes/Bookdetails/ThoughtContext/thoughtContext",
     "pages/Assistance/Persona/persona",
-    "pages/Assistance/Appearance/appearance",
     "pages/Assistance/Place/place",
     "pages/Setting/setting",
     "pages/My/my",
-    "pages/Assistance/Name/name",
     "pages/Test/test"
   ],
   "window": {

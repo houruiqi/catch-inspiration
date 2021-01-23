@@ -2,7 +2,7 @@
 <cu-custom bgImage="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/%E5%88%98%E6%B5%B7.jpg?sign=6f139073f7526b6f25613e8c7220119b&t=1610360389" isBack="{{true}}">
   <view slot="backText">返回</view>
   <view style="font-weight:bold" class="text-black" slot="content">地名生成器</view>
-</cu-custom>
+</cu-custom> 
 <view class="nameboxtop">选择生成的时代、名称长度、生成数量，即可获得相应的随机生成的地名</view>
 <view class="namebox">
   <view class="nameboxleft">
@@ -25,7 +25,7 @@
           {{number[index1]}}
           <text class="cuIcon-right"></text>
           </view>
-        </picker>
+        </picker> 
       </view> 
     </view>
   </view>
