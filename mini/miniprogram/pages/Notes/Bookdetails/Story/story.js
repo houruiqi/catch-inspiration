@@ -1,16 +1,56 @@
 // pages/Notes/Bookdetails/Story/story.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    outline:[],
+    storyContext:"",
+    storyValue:""
   },
   determine:function(){
-    wx.navigateTo({
+    var that=this;
+    wx.redirectTo({
       url: '/pages/Notes/Bookdetails/bookdetails',
-      success: function () {}
+      success: function () {
+        var outline=that.data.outline;
+        outline.push({"story":that.data.storyValue==""?"空":that.data.storyValue,"storyContext":that.data.storyContext==""?"空":that.data.storyContext})
+        that.setData({
+          outline:outline
+        })
+        that.addstory()
+      }
+    })
+  },
+  //输入标题
+  getInputValue:function(e){
+    console.log(e.detail)
+    this.setData({
+      storyValue:e.detail.value
+    })
+  },
+  //输入内容
+  getInputContext:function(e){
+    console.log(e.detail)
+    this.setData({
+      storyContext:e.detail.value
+    })
+  },
+  //添加灵感标题
+  addstory: function(){
+    const db = wx.cloud.database()
+    db.collection('books').doc(app.globalData.id).update({
+      data: {
+        outline: this.data.outline
+      },
+      success: res => {
+      },
+      fail: err => {
+        icon: 'none',
+        console.error('[数据库] [更新记录] 失败：', err)
+      }
     })
   },
 
@@ -18,8 +58,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var outline1=[];
+    wx.cloud.callFunction({
+      name: 'database',
+      data: {database: 'books'},
+      success: res => {  
+        for(var i=0;i<res.result.data.length;i++){
+          if(app.globalData.id==res.result.data[i]._id){
+            outline1=res.result.data[i].outline;
+          }
+        }
+        this.setData({
+          outline:outline1,
+        })
+        console.log(this.data.outline); 
+      },
+      fail: err => {
+        console.error('[云函数] [database] 调用失败', err)
+      }
+    })
   },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

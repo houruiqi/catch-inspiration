@@ -10,21 +10,25 @@ style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749
 <view class="box" style="font-size:60rpx" bindtap="bookbullet">
   <text class="cuIcon-add"></text>
 </view>
-<view class="box" bindtap="bookdetails">
-  破云
-</view>
-<view class="box">
-  
-</view>
-<view class="box">
-  
+<view wx:for="{{books}}" wx:key="index" wx:for-item="item">
+  <view class="box" bindtap="bookdetails" bindlongtap="tag" bindtouchstart="mytouchstart" bindtouchend="mytouchend" id="{{index}}">
+    {{item.name}}
+  </view>
 </view>
 <view class="bookbullet" style="{{bullet==1?'display:block':'display:none'}}"></view>
 <view class="bookbullet-content" style="{{bullet==1?'display:block':'display:none'}}">
   <view style="float:left">书籍名称：</view>
-  <input class="bookinput" placeholder="单行输入" style="font-size:30rpx"/>
+  <input class="bookinput" placeholder="单行输入" style="font-size:30rpx" name="bookinput" bindinput='getInputValue' value="{{bookvalue}}"/>
   <view style="margin-top:20rpx">简介：</view>
-  <textarea class="introduction"></textarea>
+  <textarea class="introduction" bindinput='getInputIntroduction' value="{{introduction}}"></textarea>
   <view class="determine" bindtap="determine">确定</view>
+  <view class="cancel" bindtap="determine">取消</view>
 </view>
+<view class="bookbullet" style="{{bullet==2?'display:block':'display:none'}}"></view>
+<view class="bookbullet-content1" style="{{bullet==2?'display:block':'display:none'}}">
+  <view>是否删除</view>
+  <view class="determine" bindtap="delete">确定</view>
+  <view class="cancel" bindtap="cancel">取消</view>
+</view>
+
 

@@ -6,7 +6,9 @@ App({
       userInfo: null,
       _id:'',
       _openid:'',
-      booktop:0
+      booktop:0,
+      id:'',//点进去第几本书
+      index:0,//点击第几个
     } // 务必确保这一行在前面
      
     // 登录

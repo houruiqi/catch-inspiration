@@ -5,39 +5,39 @@
 </cu-custom>
 <view class="result">
   <view style="float:left;">姓名：</view>
-  <input value="输入名字"/>
+  <input value="输入名字" bindinput='getName' value="{{name}}"/>
 </view>
 <view class="result">
   <view style="float:left">性别：</view>
-  <input value="输入性别"/>
+  <input value="输入性别" bindinput='getSex' value="{{sex}}"/>
 </view>
 <view class="result">
   <view style="float:left">身高：</view>
-  <input value="输入身高"/>
+  <input value="输入身高" bindinput='getHeight' value="{{height}}"/>
 </view>
 <view class="result">
   <view style="float:left">体重：</view>
-  <input value="输入体重"/>
+  <input value="输入体重" bindinput='getWeight' value="{{weight}}"/>
 </view>
 <view class="result">
   <view style="float:left">身份：</view>
-  <input value="输入身份"/>
+  <input value="输入身份" bindinput='getIdentity' value="{{identity}}"/>
 </view>
 <view class="result">
   <view style="float:left">身体状况：</view>
-  <input value="输入身体状况"/>
+  <input value="输入身体状况" bindinput='getBody' value="{{body}}"/>
 </view>
 <view class="result">
   <view style="float:left">心理状况：</view>
-  <input value="输入心理状况"/>
+  <input value="输入心理状况" bindinput='getPsychology' value="{{psychology}}"/>
 </view>
 <view class="result">
   <view style="float:left">性格：</view>
-  <input value="输入性格"/>
+  <input value="输入性格" bindinput='getCharacter' value="{{character}}"/>
 </view>
 <view class="result" style="border:#ffffff">
   <view>外貌特征：</view>
-  <textarea class="appearance" value="输入外貌特征"></textarea>
+  <textarea class="appearance" value="输入外貌特征" bindinput='getAppearance' value="{{appearance}}"></textarea>
 </view>
 <view class="determine" bindtap="determine">
   确定修改

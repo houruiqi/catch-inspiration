@@ -1,4 +1,4 @@
-// pages/Notes/Bookdetails/People/people.js
+// pages/Notes/Bookdetails/People1/people1.js
 const app = getApp()
 Page({
 
@@ -160,7 +160,7 @@ Page({
     const db = wx.cloud.database()
     db.collection('books').doc(app.globalData.id).update({
       data: {
-        leadrole: this.data.support
+        supportrole: this.data.support
       },
       success: res => {
         console.log(that.data.support)
@@ -183,7 +183,7 @@ Page({
       success: res => {  
         for(var i=0;i<res.result.data.length;i++){
           if(app.globalData.id==res.result.data[i]._id){
-            support=res.result.data[i].leadrole;
+            support=res.result.data[i].supportrole;
           }
         }
         this.setData({
