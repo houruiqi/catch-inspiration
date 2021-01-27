@@ -1,9 +1,10 @@
 /* pages/Setting/setting.wxss */
-.top{
+/* .top{
   width:90%;
   height:100rpx;
   margin-left:5%;
   margin-top:20rpx;
+  margin-bottom:100rpx;
   float:left;
 }
 .input{
@@ -22,4 +23,17 @@
   margin-left:85%;
   color: white;
   padding:20rpx;
+} */
+.box{
+  width:80%;
+  border-radius:10rpx;
+  margin-left:10%;
+  height:200rpx;
+  border-radius:10rpx;
+  margin-top:30rpx;
+}
+.text{
+  line-height: 200rpx; 
+  text-align: center; 
+  font-size:40rpx;
 }

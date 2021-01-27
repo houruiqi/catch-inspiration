@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/Assistance/assistance",
+    "pages/Setting/setting",
+    "pages/Setting/Context/context",
     "pages/Notes/notes",
     "pages/Notes/Bookdetails/PeopleContext1/Peoplecontext1",
     "pages/Assistance/Appearance/appearance",
@@ -15,7 +17,6 @@
     "pages/Notes/Bookdetails/ThoughtContext/thoughtContext",
     "pages/Assistance/Persona/persona",
     "pages/Assistance/Place/place",
-    "pages/Setting/setting",
     "pages/My/my",
     "pages/Test/test"
   ],

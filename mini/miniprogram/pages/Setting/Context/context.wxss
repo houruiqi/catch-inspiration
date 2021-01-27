@@ -1,0 +1,14 @@
+/* pages/Setting/Context/context.wxss */
+.context{
+  width:90%;
+  margin-top:20rpx;
+  margin-left:5%;
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+.title{
+  color:#4b87e0;
+  margin-left:3%;
+  font-size:40rpx;
+  text-shadow: 2px 2px 8px #00ffc8;
+}

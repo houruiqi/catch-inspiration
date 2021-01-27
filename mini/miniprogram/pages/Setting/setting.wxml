@@ -7,11 +7,23 @@ style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749
   src="https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/wave.gif?sign=317a8a385617ef7e2a56d9dd5fe15eb3&t=1610610834"
   style="z-index:-10;margin-top:-100px;height:100rpx"></image>
 </view>
-<view class="top">
+<!-- <view class="top">
   <view class="input">
     <view class="cuIcon-search" style="font-size:40rpx;float:left"></view>
-    <input placeholder="输入：例如（衣服）"/>
+    <input placeholder="输入：例如（小说）"/>
   </view>
   <view class="search">搜索</view>
-
+</view> -->
+<view
+  wx:for="{{setting}}" wx:key="index" wx:for-item="item"
+  bindtap="detail"
+  id="{{index}}"
+  class=" bg-img bg-mask box"
+  style="background-image: url('{{item.url}}');"
+>
+  <view class="text-white text">
+    {{item.name}}
+  </view>
 </view>
+
+ 

@@ -1,5 +1,5 @@
-// pages/Setting/setting.js
-var data = require("../data/data")
+// pages/Setting/Context/context.js
+var data = require("../../data/data")
 const app = getApp()
 Page({
 
@@ -7,21 +7,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    setting:data.data
+    setting:[],
+    context:""
   },
-  detail:function(e){
-    console.log(e.currentTarget.id)
-    app.globalData.setid=e.currentTarget.id
-    wx.navigateTo({
-      url: '/pages/Setting/Context/context',
-      success: function () {}
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(this.data.setting)
+    // console.log(this.data.setting)
+    // console.log(data.data[app.globalData.setid].context)
+    this.setData({
+      setting:data.data[app.globalData.setid].context,
+      context:data.data[app.globalData.setid].name
+    })
   },
 
   /**
