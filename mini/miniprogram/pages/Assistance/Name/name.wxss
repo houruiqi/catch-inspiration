@@ -1,6 +1,7 @@
 /* pages/Assistance/Name/name.wxss */
 page{
   background-color:rgb(255, 255, 255);
+  /* background-image: linear-gradient( rgb(213, 224, 254),rgb(255, 255, 255)); */
 } 
 .nameboxtop{
   margin-top:35rpx;
@@ -11,17 +12,17 @@ page{
 }
 .namebox{
   width:100%;
-  height:120rpx;
+  height:90rpx;
   /* border-bottom:1rpx solid #7a7474; */
 }
-.nameboxleft{
+.nameboxleft{ 
   margin-left:5%;
   width:90%;
 }
 .nameboxleft1{
   width:50%;
   font-size:30rpx;
-  padding-top:60rpx;
+  padding-top:30rpx;
   float:left;
 }
 .namenumber{
@@ -36,12 +37,12 @@ page{
   /* border-bottom:1rpx solid #7a7474; */
 }
 .generate{
-  width:100rpx;
+  width:300rpx;
   height:60rpx;
-  background-color:#00abdf;
-  margin-left:80%;
+  background-color:rgb(133, 151, 198);
+  margin-left:55%;
   margin-top:30rpx;
-  text-align:center;
+  text-align:center; 
   padding:10rpx;
   color:white;
   border-radius: 5rpx;

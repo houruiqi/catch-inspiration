@@ -1,32 +1,39 @@
 /* pages/Notes/Bookdetails/Thought/thought.wxss */
+page{
+  /* background-color:rgb(255, 255, 255); */
+  background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(216, 224, 247));
+}
 .inspiration{
-  width:100%;
+  width:90%;
+  margin-left: 5%;
   height:80rpx;
   padding:15rpx;
   margin-top:30rpx;
-  border-bottom:1rpx solid #363333;
-  font-size:35rpx;
+  /* border-bottom:1rpx solid #c7c7c7; */
+  font-size:28rpx;
 }
 .context{
-  width:100%;
+  width:90%;
+  margin-left: 5%;
   padding:15rpx;
-  margin-top:30rpx;
-  font-size:35rpx;
+  font-size:28rpx;
 }
 .context1{
+  padding:30rpx;
+  font-size: 28rpx;
   width:100%;
-  height:400rpx;
+  height:800rpx;
   border-radius: 10rpx;
-  border:1rpx solid #363333;
-  margin-top:30rpx;
+  border:4rpx dashed rgb(133, 151, 198);
+  margin-top:40rpx;
 }
 .determine{
-  width:60%;
-  margin-left:20%;
+  width:70%;
+  margin-left:15%;
   height:100rpx;
   margin-top:150rpx;
   border-radius: 10rpx;
-  background-color:#5abeb1;
+  background-color:rgb(133, 151, 198);
   text-align: center;
   padding-top:30rpx;
   color:#ffffff;

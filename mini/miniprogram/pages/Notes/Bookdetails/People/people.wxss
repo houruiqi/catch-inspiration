@@ -1,25 +1,32 @@
 /* pages/Notes/Bookdetails/People/people.wxss */
+page{
+  /* background-color:rgb(255, 255, 255); */
+  background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255), rgb(216, 224, 247));
+}
 .result{
-  width:100%;
-  height:70rpx;
-  border-bottom:1rpx solid #7a7474;
-  padding:20rpx;
+  margin-left: 5%;
+  font-weight: bold;
   font-size:30rpx;
-  color:#05646b;
+  color:rgb(133, 151, 198);
+  
 }
 .appearance{
   width:100%;
+  margin-left: 5%;
   height:300rpx;
   margin-top:30rpx;
-  border:1rpx solid #7a7474;
+  border-radius: 10rpx;
+  border:4rpx dashed rgb(133, 151, 198);
+  padding: 30rpx;
+  font-size: 28rpx;
 }
 .determine{
-  width:60%;
-  margin-left:20%;
+  width:70%;
+  margin-left:15%;
   height:100rpx;
-  margin-top:360rpx;
+  margin-top:400rpx;
   border-radius: 10rpx;
-  background-color:#5abeb1;
+  background-color:rgb(133, 151, 198);
   text-align: center;
   padding-top:30rpx;
   color:#ffffff;

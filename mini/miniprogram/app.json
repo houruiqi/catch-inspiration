@@ -1,22 +1,21 @@
 {
   "pages": [
     "pages/Assistance/assistance",
-    "pages/Setting/setting",
-    "pages/Setting/Context/context",
     "pages/Notes/notes",
+    "pages/Notes/Bookdetails/bookdetails",
     "pages/Notes/Bookdetails/PeopleContext1/Peoplecontext1",
     "pages/Assistance/Appearance/appearance",
     "pages/Assistance/Name/name",
-    "pages/Notes/Bookdetails/bookdetails",
-    "pages/Notes/Bookdetails/Story/story",
     "pages/Notes/Bookdetails/People/people",
+    "pages/Notes/Bookdetails/Story/story",
     "pages/Notes/Bookdetails/People1/people1",
     "pages/Notes/Bookdetails/PeopleContext/Peoplecontext",
     "pages/Notes/Bookdetails/StoryContext/storyContext",
     "pages/Notes/Bookdetails/Thought/thought",
-    "pages/Notes/Bookdetails/ThoughtContext/thoughtContext",
+    
     "pages/Assistance/Persona/persona",
     "pages/Assistance/Place/place",
+    "pages/Setting/setting",
     "pages/My/my",
     "pages/Test/test"
   ],
@@ -31,34 +30,34 @@
     "cu-custom": "/colorui/components/cu-custom"
   },
   "tabBar": {
-    "color": "#a9b7b7",
-    "selectedColor": "#11cd6e",
+    "color": "#8597C6",
+    "selectedColor": "#AABBE6",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
-    "list": [
+    "list": [ 
       {
         "text": "写作辅助",
         "pagePath": "pages/Assistance/assistance",
-        "selectedIconPath": "images/tabbar/q.png",
-        "iconPath": "images/hq.png"
+        "selectedIconPath": "images/sun.png",
+        "iconPath": "images/sun_shadow.png"
       },
       {
         "text": "灵感手札",
         "pagePath": "pages/Notes/notes",
-        "selectedIconPath": "images/tabbar/x.png",
-        "iconPath": "images/hx.png"
+        "selectedIconPath": "images/cloud.png",
+        "iconPath": "images/cloud_shadow.png"
       },
       {
         "text": "常用设定",
         "pagePath": "pages/Setting/setting",
-        "selectedIconPath": "images/tabbar/t.png",
-        "iconPath": "images/ht.png"
+        "selectedIconPath": "images/moon.png",
+        "iconPath": "images/moon_shadow.png"
       },
       {
         "text": "我的",
         "pagePath": "pages/My/my",
-        "selectedIconPath": "images/tabbar/t.png",
-        "iconPath": "images/ht.png"
+        "selectedIconPath": "images/flower.png",
+        "iconPath": "images/flower_shadow.png"
       }
     ]
   },

@@ -1,12 +1,12 @@
 <!--pages/Notes/notes.wxml-->
 <view class="bg-img align-center" 
-style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/aaa.png?sign=c2346cc309f60fa3af06c53bf194425e&t=1610611793');height: 180px;">
+style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/img/srgsrg.jpg?sign=984bbdb52544ad2a5effd0a68a07b83c&t=1611543466');height: 300px;">
 </view>
-<view style="height:60px;width:100%;">
+<!-- <view style="height:60px;width:100%;">
   <image mode="scaleToFill" class="gif-black response"
   src="https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/my/wave.gif?sign=317a8a385617ef7e2a56d9dd5fe15eb3&t=1610610834"
   style="z-index:-10;margin-top:-100px;height:100rpx"></image>
-</view>
+</view> -->
 <view class="box" style="font-size:60rpx" bindtap="bookbullet">
   <text class="cuIcon-add"></text>
 </view>
@@ -17,12 +17,19 @@ style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749
 </view>
 <view class="bookbullet" style="{{bullet==1?'display:block':'display:none'}}"></view>
 <view class="bookbullet-content" style="{{bullet==1?'display:block':'display:none'}}">
-  <view style="float:left">书籍名称：</view>
-  <input class="bookinput" placeholder="单行输入" style="font-size:30rpx" name="bookinput" bindinput='getInputValue' value="{{bookvalue}}"/>
-  <view style="margin-top:20rpx">简介：</view>
-  <textarea class="introduction" bindinput='getInputIntroduction' value="{{introduction}}"></textarea>
-  <view class="determinebook" bindtap="determine">确定</view>
-  <view class="cancelbook" bindtap="cancel">取消</view>
+  <view bindtap="cancel" class="top">
+    <view class="cuIcon-close lg text-grey close"></view>
+    <!-- <text class="cuIcon-close lg text-black close"></text> -->
+  </view>
+  <view class="padding">
+    <view style="float:left">书籍名称：</view>
+    <input class="bookinput" placeholder="请输入名称" style="font-size:30rpx" name="bookinput" bindinput='getInputValue' value="{{bookvalue}}"/>
+    <view style="margin-top:20rpx;">简介：</view>
+    <textarea class="introduction" bindinput='getInputIntroduction' value="{{introduction}}"></textarea>
+    <view class="determinebook" bindtap="determine">取消</view>
+    <view class="cancelbook" bindtap="cancel">确定</view>
+  </view>
+  
 </view>
 <view class="bookbullet" style="{{bullet==2?'display:block':'display:none'}}"></view>
 <view class="bookbullet-content1" style="{{bullet==2?'display:block':'display:none'}}">
