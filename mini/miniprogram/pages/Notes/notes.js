@@ -172,7 +172,25 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    var list=[];
+    wx.cloud.callFunction({
+      name: 'database',
+      data: {database: 'books'},
+      success: res => {  
+        for(var i=0;i<res.result.data.length;i++){
+          if(app.globalData._openid==res.result.data[i]._openid){
+            list.push(res.result.data[i]);
+          }
+        }
+        this.setData({
+          books:list
+        })
+        console.log(this.data.books); 
+      },
+      fail: err => {
+        console.error('[云函数] [database] 调用失败', err)
+      }
+    })
   },
 
   /**

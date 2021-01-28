@@ -11,6 +11,13 @@ Page({
     think:{}  ,
     inspiration:[]//改变的那个inspiration
   },
+  back:function(){
+    wx.redirectTo({
+      url: '/pages/Notes/Bookdetails/bookdetails',
+      success: function () {
+      }
+    })
+  },
   determine:function(){
     var that=this;
     wx.redirectTo({

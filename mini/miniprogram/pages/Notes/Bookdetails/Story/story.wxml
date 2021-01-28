@@ -1,8 +1,15 @@
 <!--pages/Notes/Bookdetails/Story/story.wxml-->
-<cu-custom bgImage="https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/img/%25%5D87%245X%259FVI%5DDI5%7D0YA%5B%7B5.png?sign=4c1cc1a8f87aa6496f036b547eaffe31&t=1611487607" isBack="{{true}}">
+<!-- <cu-custom bgImage="https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/img/%25%5D87%245X%259FVI%5DDI5%7D0YA%5B%7B5.png?sign=4c1cc1a8f87aa6496f036b547eaffe31&t=1611487607" isBack="{{true}}">
   <view slot="backText">返回</view>
   <view style="font-weight:bold" class="text-white" slot="content">添加内容</view>
-</cu-custom>
+</cu-custom> -->
+<view class="bg-img padding-tb-xl" 
+    style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/img/%25%5D87%245X%259FVI%5DDI5%7D0YA%5B%7B5.png?sign=4c1cc1a8f87aa6496f036b547eaffe31&t=1611487607');height: 180rpx;">
+    <view class="padding-xl text-white">
+      <view class="cuIcon-back" style="float:left;font-size:40rpx;" bindtap="back"></view>
+      <view style="margin-left:40%;color:#fff;font-weight:bold;font-size:35rpx">添加内容</view>
+    </view>
+</view>
 <view class="inspiration">
   <view style="float:left">章节标题：</view>
   <input placeholder="在此处输入" bindinput='getInputValue' value="{{storyValue}}"/>

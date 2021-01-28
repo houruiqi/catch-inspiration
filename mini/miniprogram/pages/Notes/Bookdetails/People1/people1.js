@@ -17,6 +17,13 @@ Page({
     character:"",
     appearance:""
   },
+  back:function(){
+    wx.redirectTo({
+      url: '/pages/Notes/Bookdetails/bookdetails',
+      success: function () {
+      }
+    })
+  },
   determine:function(){
     var that=this;
     wx.redirectTo({

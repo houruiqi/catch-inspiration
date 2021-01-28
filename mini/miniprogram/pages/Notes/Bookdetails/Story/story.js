@@ -10,6 +10,13 @@ Page({
     storyContext:"",
     storyValue:""
   },
+  back:function(){
+    wx.redirectTo({
+      url: '/pages/Notes/Bookdetails/bookdetails',
+      success: function () {
+      }
+    })
+  },
   determine:function(){
     var that=this;
     wx.redirectTo({
@@ -53,7 +60,6 @@ Page({
       }
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
