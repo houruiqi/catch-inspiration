@@ -3,7 +3,7 @@
 
 <view>
     <view class="bg-img align-center" 
-    style="background-image: url('https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/my/0%20(4).gif?sign=bb05cb7003bd2ccf3b3d537b6996e3b3&t=1610414654');height: 180px;"></view>
+    style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/img/srgsrg.jpg?sign=984bbdb52544ad2a5effd0a68a07b83c&t=1611543466');height: 260px;"></view>
 
     <view style="{{islogin==1?'display:none':'display:block'}}"  class="text-center">
       <button open-type="getUserInfo" 
@@ -14,18 +14,18 @@
       <view style="background-image: url({{avatarUrl}})" class="cu-avatar round solids" id="pic-size"></view>
     </view>
 
-    <view style="height:60px;width:100%;">
+    <!-- <view style="height:60px;width:100%;">
       <image mode="scaleToFill" class="gif-black response"
       src="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/my/wave.gif?sign=2a25f1b518c8c99643e82206b4d02773&t=1610414452"
       style="z-index:-10;margin-top:-100px;height:100rpx"></image>
-    </view>
+    </view> -->
 </view>
 
 <view class="cu-list menu sm-border">
     <view class="cu-item arrow" bindtap="jumptest">
     <view  class="content">
       <text class="cuIcon-writefill text-grey"></text>
-      <text class="text-grey">测试</text>
+      <text class="text-grey">设置</text>
     </view>
   </view>
 </view>

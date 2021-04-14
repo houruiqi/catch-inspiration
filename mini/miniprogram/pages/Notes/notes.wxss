@@ -119,7 +119,7 @@ page{
   padding-top: 4rpx;
   /* border:1rpx solid #000000; */
   border-radius: 5rpx;
-  margin-left:60%;
+  margin-left:60%; 
   margin-top:60rpx;
   text-align: center;
 }
