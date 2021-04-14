@@ -4,16 +4,14 @@
 <view>
     <view class="bg-img align-center" 
     style="background-image: url('https://6275-buhuolinggan-9gyslra9e051f6a6-1304749657.tcb.qcloud.la/img/srgsrg.jpg?sign=984bbdb52544ad2a5effd0a68a07b83c&t=1611543466');height: 260px;"></view>
-
-    <view style="{{islogin==1?'display:none':'display:block'}}"  class="text-center">
-      <button open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo" 
-      class="cu-btn round bg-green">获取头像昵称</button>
+ 
+    <view style="{{islogin==1?'display:none':'display:block'}};margin-top:-36px"  class="text-center">
+      <button class="cu-btn round bg-green" bindtap="getUserProfile">获取头像昵称</button>
     </view>
     <view style="{{islogin==1?'display:block':'display:none'}};margin-top:-53px"  class='text-center'>
       <view style="background-image: url({{avatarUrl}})" class="cu-avatar round solids" id="pic-size"></view>
     </view>
-
+ 
     <!-- <view style="height:60px;width:100%;">
       <image mode="scaleToFill" class="gif-black response"
       src="https://6361-catchinspiration-o363y-1304744660.tcb.qcloud.la/my/wave.gif?sign=2a25f1b518c8c99643e82206b4d02773&t=1610414452"
@@ -21,7 +19,7 @@
     </view> -->
 </view>
 
-<view class="cu-list menu sm-border">
+<view style="margin-top:20px" class="cu-list menu sm-border">
     <view class="cu-item arrow" bindtap="jumptest">
     <view  class="content">
       <text class="cuIcon-writefill text-grey"></text>
